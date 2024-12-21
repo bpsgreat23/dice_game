@@ -9,4 +9,13 @@ function imageIn(){
     var img2 = document.querySelectorAll("img")[1]
     img1.setAttribute("src", randomImg2);
     img2.setAttribute("src",randomImg3)
+    if(n > m){
+        document.querySelector("h1").innerHTML = "🚩Player 1 Wins!!!"
+    }
+    else if(n < m){
+        document.querySelector("h1").innerHTML = "Player 2 Wins!!!🚩"
+    }
+    else{
+        document.querySelector("h1").innerHTML = "Draws!!!"
+    }
 }
